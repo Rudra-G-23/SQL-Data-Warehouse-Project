@@ -1,0 +1,8 @@
+# Requirements for SQL Modern Warehouse and Analytics Project
+
+# Database
+# No external Python libraries are required for this project as it is entirely based on SQL Server.
+
+# Optional Tools (if needed for auxiliary tasks or automation)
+# python-dotenv==1.0.0  # For managing environment variables (optional)
+# requests==2.28.1      # For API integrations if needed
