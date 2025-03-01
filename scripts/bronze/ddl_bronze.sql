@@ -24,12 +24,12 @@ CREATE TABLE bronze.crm_cust_info (
 DROP TABLE IF EXISTS bronze.crm_prd_info;
 CREATE TABLE bronze.crm_prd_info (
     prd_id       INT,
-    prd_key      NVARCHAR(50),
-    prd_nm       NVARCHAR(50),
+    prd_key      VARCHAR(50),
+    prd_nm       VARCHAR(50),
     prd_cost     INT,
-    prd_line     NVARCHAR(50),
-    prd_start_dt DATETIME,
-    prd_end_dt   DATETIME
+    prd_line     VARCHAR(50),
+    prd_start_dt DATET,
+    prd_end_dt   DATE
 );
 
 
