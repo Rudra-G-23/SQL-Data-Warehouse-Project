@@ -1,4 +1,4 @@
-# 🌟 **Modern Data Warehouse & Analytics Project**  
+## 🌟 **Modern Data Warehouse & Analytics Project**  
 
 👋 Hello, Data Points!
 
@@ -13,7 +13,7 @@ This repository provides a **step-by-step** approach to building a **scalable, e
 
 ---
 
-# 🏗️ **Data Architecture Overview**  
+## 🏗️ **Data Architecture Overview**  
 
 The project follows the **Medallion Architecture** with three layers:  
 
@@ -26,7 +26,7 @@ The project follows the **Medallion Architecture** with three layers:
 
 ---
 
-# 📖 **Project Overview**  
+## 📖 **Project Overview**  
 
 ### 🔍 **Key Features & Learnings:**  
 🔹 **SQL Development** – Writing optimized SQL queries for analytics.  
@@ -44,7 +44,7 @@ The project follows the **Medallion Architecture** with three layers:
 
 ---
 
-# 📂 **Repository Structure**  
+## 📂 **Repository Structure**  
 
 ```
 data-warehouse-project/
@@ -80,7 +80,7 @@ data-warehouse-project/
 
 ---
 
-# 🚀 **Project Requirements**  
+## 🚀 **Project Requirements**  
 
 ### 👨‍💻 **Data Engineering: Building the Data Warehouse**  
 **Goal:** Develop a **PostgreSQL-based** data warehouse consolidating **sales data** for analytical reporting.  
@@ -103,7 +103,7 @@ data-warehouse-project/
 
 ---
 
-# 🛠️ **Setup & Installation Guide**  
+## 🛠️ **Setup & Installation Guide**  
 
 ### **🔹 Prerequisites:**  
 - Install **PostgreSQL** → [Download PostgreSQL](https://www.postgresql.org/download/)  
@@ -128,7 +128,7 @@ data-warehouse-project/
 
 ---
 
-# 🔗 **Useful Links & Resources**  
+## 🔗 **Useful Links & Resources**  
 
 📌 **Project Assets:**  
 - 📂 [Dataset Folder](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/tree/main/datasets)  
@@ -143,7 +143,14 @@ data-warehouse-project/
 📩 **Got questions?** Open an **issue** or reach out to me!  
 
 
-📌 **Follow me on:**  
+## 🙏 Thank you
+A special thank you to my instructor, Baraa Khatib Salkini, IT Project Manager | Lead Big Data, Data Lakehouse and BI at Mercedes-Benz AG. I learned many things from him.
+*   [LinkedIn](https://www.linkedin.com/in/baraa-khatib-salkini-845b1b55/)
+*   [YouTube](https://www.youtube.com/@DataWithBaraa) 
+
+
+
+## 📌 **Follow me on:**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/rudra-prasad-bhuyan-44a388235)  
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/Rudra-G-23)  
 [![Kaggle](https://img.shields.io/badge/Kaggle-Explore-blue?logo=kaggle)](https://www.kaggle.com/rudraprasadbhuyan)  
