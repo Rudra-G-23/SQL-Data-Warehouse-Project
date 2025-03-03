@@ -1,7 +1,11 @@
 
 ## 📃 **Scripts**  
 - Ensuring **data reliability and efficiency** is critical in a **Modern Data Warehouse**.  
-- This section describes **scripts, procedures, and transformations** used in the **ETL pipeline** to maintain **high-quality, structured, and efficient data.**  
+- This section describes **scripts, procedures, and transformations** used in the **ETL pipeline** to maintain **high-quality, structured, and efficient data.**
+  
+---
+
+![data_layer](https://github.com/user-attachments/assets/d298da24-6a18-4476-93d9-d4709a33b6af)
 
 ---
 
