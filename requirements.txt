@@ -1,7 +1,11 @@
-# Requirements for SQL Modern Warehouse and Analytics Project
+# Requirements for SQL Modern Warehouse and Analytics Project.
 
 # Database
-# No external Python libraries are required for this project as it is entirely based on SQL Server.
+# No external Python libraries are required for this project as it is entirely based on Postgre SQL.
+
+# Tools that I used to build this project
+- Notion (For Tracking Progress)
+- pgAdmin4 (a popular PostgreSQL administration and development platform)
 
 # Optional Tools (if needed for auxiliary tasks or automation)
 # python-dotenv==1.0.0  # For managing environment variables (optional)
