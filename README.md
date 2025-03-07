@@ -1,6 +1,8 @@
-## 🌟 **Modern Data Warehouse & Analytics Project**  
+# 🌟 **Modern Data Warehouse & Analytics Project**  
 
-👋 Hello, Data Points!
+👋 Hello, Data Points! 
+- My name is **Rudra Prasad Bhuyan** ! 😄
+- I am a Kaggle expert and a Google Certified Data Analyst.
 
 Welcome to this **Modern Data Warehouse** project using **PostgreSQL**! 🎯  
 
@@ -9,6 +11,7 @@ This repository provides a **step-by-step** approach to building a **scalable, e
 ✅ **Data Modeling** (Star Schema)  
 ✅ **Exploratory Data Analysis (EDA)**  
 ✅ **SQL-based Reporting & Analytics**  
+✅ **Advanced-Data Analytsis & Reporting**  
 📝 **[Project Notion Page](https://www.notion.so/rudra-12345g/SQL-Data-Warehouse-Project-By-Rudra-1a65c069c4db80aeacecf558aeeb2c78)**
 
 ---
@@ -21,8 +24,9 @@ The project follows the **Medallion Architecture** with three layers:
 📌 **Silver Layer (Cleansed & Transformed Data)** – Data is cleaned, structured, and normalized.  
 📌 **Gold Layer (Business-Ready Data)** – Optimized for analytics and reporting using a **star schema**.  
 
-### **🔹 Architecture Diagram:**  
-![Data Architecture](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/warehouse/Data_Architecture.png)  
+### **🌐 Architecture Diagram:**  
+
+![Data_Architecture](https://github.com/user-attachments/assets/08e761c2-de49-4d74-89d8-394b55878095)
 
 ---
 
@@ -47,35 +51,57 @@ The project follows the **Medallion Architecture** with three layers:
 ## 📂 **Repository Structure**  
 
 ```
+
 data-warehouse-project/
+├── datasets/             # Raw data from ERP and CRM systems.
 │
-├── datasets/                           # Raw datasets (ERP & CRM data)
-│
-├── docs/                               # Documentation & architecture details
-│   ├── bronze/                         
-│   |   ├── data_flow_bronze.drawio      # Data flow diagram (Source → Bronze)                        
+├── docs/                 # Project documentation, architecture diagrams, and outputs.
+│   ├── bronze/
+│   │   ├── data_flow_bronze.drawio   # Data flow diagram: Source -> Bronze (Draw.io).
+│   │   ├── bronze_data_schema.md # Schema of the bronze layer tables.
+│   │   └── bronze_output_examples/ # Example of the data after the bronze layer processing.
 │   ├── silver/
-│   |   ├── data_flow_silver.drawio      # Data flow diagram (Bronze → Silver)
-│   |   ├── data_cleaning_output/        # Sample outputs after cleaning                          
-│   ├── gold/ 
-│   |   ├── data_flow_gold.drawio        # Data flow diagram (Silver → Gold)                        
-│   |   ├── data_models.drawio           # Star schema model                    
-│   |   ├── data_catalog.md              # Metadata & dataset field descriptions
-│   ├── warehouse/                            
-│       ├── naming-conventions.md           # Standardized naming guidelines
-│       ├── etl.drawio                      # ETL process diagrams
+│   │   ├── data_cleaning_output/   # Examples of data after cleaning.
+│   │   ├── data_flow_silver.drawio   # Data flow diagram: Bronze -> Silver (Draw.io).
+│   │   ├── Data_Integration.drawio   # Data integration diagram (Draw.io).
+│   │   └── silver_data_schema.md # Schema of the silver layer tables.
+│   ├── gold/
+│   │   ├── output/             # Examples of the data after the gold layer processing.
+│   │   ├── data_catalog.md     # Data dictionary for the Gold layer, including field descriptions.
+│   │   ├── data_flow_gold.drawio   # Data flow diagram: Silver -> Gold (Draw.io).
+│   │   ├── data_models.drawio   # Star schema diagram (Draw.io).
+│   │   └── gold_data_schema.md  # Schema of the gold layer tables.
+│   └── warehouse/
+│       ├── naming_conventions.md # Naming conventions for tables, columns, etc.
+│       ├── data_architecture.drawio # Overall data warehouse architecture diagram (Draw.io).
+│       └── etl.drawio         # ETL process diagram, showcasing techniques and methods (Draw.io).
 │
-├── scripts/                            # SQL scripts for ETL & transformation
-│   ├── bronze/                         # Extract & Load scripts
-│   ├── silver/                         # Data cleansing & transformation scripts
-│   ├── gold/                           # Data modeling scripts
-│   ├── init_database.sql               # Initial database creation script
+├── scripts/              # SQL scripts for ETL and transformations.
+│   ├── bronze/
+│   │   └── load_raw_data.sql # Scripts to load data from the 'datasets' directory into the bronze layer.
+│   ├── silver/
+│   │   └── transform_clean_data.sql # Scripts to clean and transform the data in the bronze layer.
+│   └── gold/
+│       ├── create_analytical_views.sql # Scripts to create views for analysis in the gold layer.
+│       └── populate_dimensions.sql # Scripts to populate dimension tables.
+│   └── init_database.sql   # Script to create the database and schemas.
 │
-├── tests/                              # Quality check scripts
+├── tests/                 # Test scripts and quality control files (e.g., data quality checks).
+│   └── data_quality_checks.sql # SQL scripts for data quality checks.
 │
-├── README.md                           # Project overview & instructions
-├── LICENSE                             # Licensing details
-└── requirements.txt                    # Dependencies & tools
+├── report/                # Analysis scripts and reports.
+│   ├── 1_gold_layer_datasets/   # Datasets used for reporting and analysis.
+│   ├── 2_eda_scripts/        # Exploratory Data Analysis (EDA) scripts.
+│   │   └── basic_eda.ipynb # Jupyter notebook containing basic EDA.
+│   ├── 3_advanced_eda/       # Advanced EDA scripts and analyses.
+│   │   └── advanced_eda.ipynb # Jupyter notebook containing advanced EDA.
+│   ├── output/             # Output from the analysis (e.g., charts, tables).
+│   ├── 12_report_customers.sql # SQL script for the customer report.
+│   └── 13_report_products.sql # SQL script for the product report.
+│
+├── README.md              # Project overview, instructions, and report summaries.
+├── LICENSE                # License information.
+└── requirements.txt        # Project dependencies (e.g.pgsql libraries).
 ```  
 
 ---
@@ -103,6 +129,32 @@ data-warehouse-project/
 
 ---
 
+## 📰 Report - Data Analysis and Business Insights
+
+This section summarizes the data analysis process and the resulting reports, providing valuable business insights.
+
+![analysis](https://github.com/user-attachments/assets/c897de5d-f094-4234-ba85-62a622b2a4cd)
+
+## 🎏 Data Exploration and Analysis
+
+The analysis followed a structured approach, covering various aspects of the data:
+
+1.  **Database Exploration:** Understanding the structure and relationships within the database.
+2.  **Dimensions Exploration:** Analyzing the characteristics of the dimension tables (customers, products).
+3.  **Date Range Exploration:** Identifying the time period covered by the data.
+4.  **Measures Exploration:** Examining key metrics and their distributions.
+5.  **Magnitude Exploration:** Understanding the scale of different measures.
+6.  **Ranking Analysis:** Identifying top performers (e.g., customers, products).
+7.  **Change Over Time Analysis:** Tracking trends and patterns over time.
+8.  **Cumulative Analysis:** Examining the accumulated values of metrics.
+9.  **Performance Analysis:** Evaluating the performance of different aspects of the business.
+10. **Data Segmentation:** Grouping data into meaningful segments for targeted analysis.
+11. **Part-to-Whole Analysis:** Understanding the contribution of different parts to the overall picture.
+
+
+The EDA process was conducted using  SQL queries. The results of the EDA are stored in the `output` directory within the `report` folder.
+
+---
 ## 🛠️ **Setup & Installation Guide**  
 
 ### **🔹 Prerequisites:**  
@@ -144,7 +196,7 @@ data-warehouse-project/
 
 
 ## 🙏 Thank you
-A special thank you to my instructor, Baraa Khatib Salkini, IT Project Manager | Lead Big Data, Data Lakehouse and BI at Mercedes-Benz AG. I learned many things from him.
+A special thank you to my instructor, Baraa Khatib Salkini.IT Project Manager | Lead Big Data, Data Lakehouse and BI at Mercedes-Benz AG. I learned many things from him.
 *   [LinkedIn](https://www.linkedin.com/in/baraa-khatib-salkini-845b1b55/)
 *   [YouTube](https://www.youtube.com/@DataWithBaraa) 
 
