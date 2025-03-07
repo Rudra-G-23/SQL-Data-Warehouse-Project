@@ -140,7 +140,9 @@ data-warehouse-project/
 
 This section summarizes the data analysis process and the resulting reports, providing valuable business insights.
 
-![analysis](https://github.com/user-attachments/assets/c897de5d-f094-4234-ba85-62a622b2a4cd)
+
+![eda analysis](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/my_notes/eda_steps_analysis.svg)
+
 
 ## 🎏 Data Exploration and Analysis
 
