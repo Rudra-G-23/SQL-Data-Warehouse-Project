@@ -1,12 +1,12 @@
 /*
 ===============================================================================
-DDL Script: Create Gold Views (PostgreSQL Version)
+DDL Script: Create Gold Views (PostgreSQL)
 ===============================================================================
 Script Purpose:
-    This script creates views for the Gold layer in the data warehouse.
+    This script creates views for the Gold layer in the data warehouse. 
     The Gold layer represents the final dimension and fact tables (Star Schema)
 
-    Each view performs transformations and combines data from the Silver layer
+    Each view performs transformations and combines data from the Silver layer 
     to produce a clean, enriched, and business-ready dataset.
 
 Usage:
@@ -17,10 +17,8 @@ Usage:
 -- =============================================================================
 -- >> Create Dimension: gold.dim_customers
 -- =============================================================================
--- Drop the view if it exists
 DROP VIEW IF EXISTS gold.dim_customers;
 
--- Create the view
 CREATE VIEW gold.dim_customers AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY cst_id) AS customer_key,
@@ -45,10 +43,8 @@ FROM
 -- =============================================================================
 -- >> Create Dimension: gold.dim_products
 -- =============================================================================
--- Drop the view if it exists
 DROP VIEW IF EXISTS gold.dim_products;
 
--- Create the view
 CREATE VIEW gold.dim_products AS
 SELECT
     ROW_NUMBER() OVER (ORDER BY prd_start_dt, pn.sls_prd_key) AS product_key,
@@ -66,19 +62,17 @@ FROM
     silver.crm_prd_info AS pn
     LEFT JOIN silver.erp_px_cat_g1v2 AS pc ON pn.cat_id = pc.id
 WHERE
-    pn.prd_end_dt IS NULL; -- Filter out the historical Date
+    pn.prd_end_dt IS NULL; -- Filter out historical products
 
 
 -- =============================================================================
 -- >> Create Fact Table: gold.fact_sales
 -- =============================================================================
--- Drop the view if it exists
 DROP VIEW IF EXISTS gold.fact_sales;
 
--- Create the view
 CREATE VIEW gold.fact_sales AS
 SELECT
-    sd.sls_ord_num AS order_name,
+    sd.sls_ord_num AS order_number,
     pr.product_key,
     cu.customer_key,
     sd.sls_cust_id AS customer_id,
@@ -86,7 +80,7 @@ SELECT
     sd.sls_ship_dt AS shipping_date,
     sd.sls_due_dt AS due_date,
     sd.sls_sales AS sales_amount,
-    sd.sls_quantity AS quantity,
+    sd.sls_quantity AS quantity, 
     sd.sls_price AS price
 FROM
     silver.crm_sales_details AS sd
