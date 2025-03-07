@@ -1,6 +1,6 @@
 # 🌱 ETL
 
-![ELT](https://github.com/user-attachments/assets/ad61c147-1684-4fcc-9bce-1635f43a68f1)
+![ELT](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/my_notes/ETL/ETL.svg)
 
 ---
 # 🪴 Schema
