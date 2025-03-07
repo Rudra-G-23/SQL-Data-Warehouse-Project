@@ -1,10 +1,13 @@
-# 🌟 **Modern Data Warehouse & Analytics Project**  
+# 🌟 **Modern Data Warehouse & Analytics End-to-End Project**  
 
 👋 Hello, Data Points! 
 - My name is **Rudra Prasad Bhuyan** ! 😄
 - I am a Kaggle expert and a Google Certified Data Analyst.
 
-Welcome to this **Modern Data Warehouse** project using **PostgreSQL**! 🎯  
+Welcome to this **Modern Data Warehouse & Analytics End-to-End Project** project using **PostgreSQL**! 🎯  
+
+## 🪄Modern Data Warehouse & Analytics End-to-End Project overview
+![i](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/my_notes/SQL_Projects.svg)
 
 This repository provides a **step-by-step** approach to building a **scalable, efficient, and analytics-ready data warehouse**. It covers:  
 ✅ **ETL Pipelines** (Extract, Transform, Load)  
@@ -104,6 +107,10 @@ data-warehouse-project/
 └── requirements.txt        # Project dependencies (e.g.pgsql libraries).
 ```  
 
+---
+
+## 🌊 Data Flow
+![dataflow](https://github.com/Rudra-G-23/SQL-Data-Warehouse-Project/blob/main/docs/my_notes/data_flow.svg)
 ---
 
 ## 🚀 **Project Requirements**  
